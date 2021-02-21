@@ -80,3 +80,8 @@ footer p {
     text-align: center;
   }
 }
+
+.img {
+  object-fit: cover;
+  height: 300px;
+}
