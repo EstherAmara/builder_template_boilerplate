@@ -38,8 +38,8 @@ footer p {
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
-.helvetica {
-  font-family: Helvetica, sans-serif;
+.mulish {
+  font-family: 'Mulish', sans-serif;
 }
 
 html {
@@ -66,11 +66,41 @@ a:hover {
 }
 
 .link {
-  padding: 15px;
-  background-color: #FFDE59;
-  color: black;
-  border-radius: 7px;
-  font-weight: bold;
+  background-color: #FF7052;
+  padding: 1em 3em;
+  border-radius: 50px;
+  box-shadow: 0px 10px 30px -8px rgb(0 0 0 / 16%);
+  font-size: 1.32em;
+  color: white;
+}
+
+.icon-link {
+  font-size: 1.5em !important;
+    border: 1px solid gray;
+    padding: 9px;
+    border-radius: 555px;
+    height: 40px;
+    width: 40px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.icon-link.fa-facebook:hover {
+  /* background-color: #1773EA; */
+  background-color: #4064AC;
+  color: #fff;
+}
+.icon-link.fa-instagram:hover {
+  background-color: #E82776;
+  color: #fff;
+}
+.icon-link.fa-twitter:hover {
+  background-color: #1C9CEA;
+  color: #fff;
+}
+.icon-link.fa-whatsapp:hover {
+  background-color: #24CC63;
+  color: #fff;
 }
 
 .f-16 {
@@ -114,11 +144,24 @@ a:hover {
 
 @media(max-width: 991px) {
   html {
-    font-size: 2vw;
+    font-size: 2vw !important;
   }
 }
 @media (max-width: 500px) {
   html {
-    font-size: 2.5vw;
+    font-size: 2.5vw !important;
   }
+  .icons {
+    width: 100% !important;
+  }
+  
+  .mainImage img {
+    width: 100% !important;
+  }
+}
+
+.background {
+  background-image: linear-gradient(140deg, #ebb0e7 0%, #2642D3 100%);
+  padding: 2em 0em;
+  font-size: 2.55em;
 }
