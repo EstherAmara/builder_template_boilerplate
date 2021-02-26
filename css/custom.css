@@ -140,23 +140,59 @@ a:hover {
   object-fit: cover;
 }
 
-
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 0 0;
+  color: #000;
+  width: 35rem;
+  margin: 0 auto;
+}
+.time-item {
+  padding: 2rem 2.53rem;
+  font-weight: 100;
+  position: relative;
+  color: white;
+  font-size: 4em;
+  background-color: #e13e3e;
+  margin: 0 15px;
+}
+.time-item::after {
+  content: ":";
+  position: absolute;
+  top: 11px;
+  right: 0px;
+  color: #e13e3e;
+  font-size: 3.9rem;
+  margin-right: -20px;
+}
+.time-item:last-child::after {
+  content: "";
+}
+.time-item:last-of-type {
+  border-right: none;
+}
+.time-item p:first-child {
+  line-height: 1;
+}
+.time-item p:last-child {
+  margin-top: 0px;
+  font-size: 0.75rem;
+}
 
 @media(max-width: 991px) {
-  html {
-    font-size: 2vw !important;
-  }
-}
-@media (max-width: 500px) {
   html {
     font-size: 2.5vw !important;
   }
   .icons {
     width: 100% !important;
-  }
-  
+  }  
   .mainImage img {
     width: 100% !important;
+  }
+  .time-item {
+    padding: 2rem 1rem;
   }
 }
 
