@@ -116,6 +116,19 @@ a:hover {
   html {
     font-size: 2vw;
   }
+  .desc {
+    width: 70% !important;
+  }
+  * {
+    font-size: 1.5rem;
+  }
+  .img-100 {
+    width: 100% !important;
+  }
+  .px6 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 @media (max-width: 500px) {
   html {
