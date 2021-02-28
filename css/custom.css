@@ -54,6 +54,14 @@ a:hover {
   color: inherit;
 }
 
+ul {
+  list-style-position: inside;
+  padding-left: 0px;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
 .w-37 {
   width: 37%;
 }
@@ -67,13 +75,27 @@ a:hover {
 .text-red {
   color: #ff0000;
 }
+.text-gold {
+  color: #FFE380;
+}
+.bg-black {
+  background-color: #000;
+}
+.bg-darkgray {
+  background-color: #171717;
+}
+
+.caret-list li {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+}
 
 .link {
   background-color: #e13e3e;
-  padding: 1em 3em;
+  padding: 0.9em 2em;
   border-radius: 50px;
   box-shadow: 0px 10px 30px -8px rgb(0 0 0 / 16%);
-  font-size: 1.32em;
   color: white;
 }
 
@@ -89,7 +111,6 @@ a:hover {
 }
 
 .icon-link.fa-facebook:hover {
-  /* background-color: #1773EA; */
   background-color: #4064AC;
   color: #fff;
 }
@@ -106,17 +127,6 @@ a:hover {
   color: #fff;
 }
 
-.f-16 {
-  font-size: 1.2em;
-}
-.px11 {
-  padding-right: 11em;
-  padding-left: 11em;
-}
-.px8 {
-  padding-right: 8em;
-  padding-left: 8em;
-}
 .px6 {
   padding-right: 6em;
   padding-left: 6em;
@@ -157,49 +167,6 @@ a:hover {
   object-fit: cover;
 }
 
-.time {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.time-item {
-  position: relative;
-  color: white;
-  font-size: 3em;
-  margin: 0 10px;
-}
-.time-item::after {
-  content: "";
-    display: block;
-    height: 3px;
-    margin: auto 0;
-    position: absolute;
-    top: -15px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: white;
-}
-.time-item:last-child::after {
-  content: "";
-}
-.time-item:last-of-type {
-  border-right: none;
-}
-.time-item p:first-child {
-  line-height: 1;
-  background: #e13e3e;
-  padding: 1.4rem 0.5rem;
-  border-radius: 10px;
-}
-.time-item p:last-child {
-  margin-top: 5px;
-  font-size: 0.75rem;
-  color: #e13e3e;
-  text-align: center;
-  font-weight: bold;
-}
-
 @media(max-width: 991px) {
   html {
     font-size: 2.5vw !important;
@@ -207,27 +174,6 @@ a:hover {
   .icons {
     width: 100% !important;
   }  
-  .mainImage img {
-    width: 100% !important;
-  }
-  .time-item {
-    padding: 2rem 0.5rem;
-  }
-  .px11 {
-    padding-right: 6em;
-    padding-left: 6em;
-  }
-  .learn .row .col-lg-6 .d-flex {
-    flex-direction: column;
-    text-align: center;
-  }
-  .learn .row .col-lg-6 .d-flex img {
-    width: 25%;
-    margin: auto;
-  }
-  .learn .row .col-lg-6 .d-flex div {
-    margin-left: 0px !important;
-  }
   .faq {
     width: 70%;
   }
@@ -242,90 +188,20 @@ a:hover {
   img.w-60, img.w-75 {
     width: 100% !important;
   }
+  .w-50 {
+    width: 85% !important;
+  }
   .test.w-50 {
     width: 75% !important;
   }
+  .icon-link {
+    height: 35px !important;
+  }
 }
 
-.background {
-  background-image: linear-gradient(140deg, #ebb0e7 0%, #2642D3 100%);
-  padding: 2em 0em;
-  font-size: 2.55em;
+.playfair {
+  font-family: 'Playfair Display', serif;
 }
-.bg {
-  background-image: linear-gradient(320deg, #87065cee 35%, #0f3491dc 74%);
-  height: 95vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-}
-
-.bg160 {
-  background-image: linear-gradient(160deg, #021448 26%, #f2295b 98%);
-}
-
-.blue-link {
-  background-color: #1825A3;
-  color: white;
-  padding: 1rem 3rem;
-  font-size: 1.5rem;
-  border-radius: 20px;
-  font-weight: bold;
-}
-
-.trans-link {
-  background: transparent;
-  padding: 1rem 3rem;
-  border-radius: 25px;
-  border: 2px solid white;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.heading {
-  font-size: 2rem;
-  font-weight: 400;
-}
-
-.roboto {
-  font-family: 'Roboto', sans-serif;
-}
-.mulish {
-  font-family: 'Mulish', sans-serif;
-}
-
-.trans-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: left;
-  font-weight: bold;
-  margin-top: 4%;
-  border-bottom: 1px solid #686868; 
-  background-color: rgba(35,35,35,0); 
-  padding: 2rem 3rem; 
-  box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 12%); 
-  font-size: 1.1em;
-}
-
-.sound li {
-  margin-bottom: 5%;
-}
-
-.bg-orangered {
-  background-color: #FF634D;
-}
-
-.icon-box {
-  box-shadow: rgb(0 0 0 / 7%) 0px 4px 19px 0px inset; 
-  background-color: rgba(12, 15, 32, 0.06) !important; 
-  width: 90px; 
-  height: 90px; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center;
-  position: relative;
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
 }
